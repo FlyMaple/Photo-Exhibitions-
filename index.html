@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Core CSS file -->
+    <link rel="stylesheet" href="node_modules/photoswipe/dist/photoswipe.css">
+    <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite, 
+     - preloader.gif (for browsers that do not support CSS animations) -->
+    <link rel="stylesheet" href="node_modules/photoswipe/dist/default-skin/default-skin.css">
+    <!-- Core JS file -->
+    <script src="node_modules/photoswipe/dist/photoswipe.js"></script>
+    <!-- UI JS file -->
+    <script src="node_modules/photoswipe/dist/photoswipe-ui-default.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
+    <script src="index.js"></script>
+    <script src="directive/photo-swipe/photo-swipe-service.js"></script>
+    <script src="directive/photo-swipe/photo-swipe.js"></script>
+    <script src="directive/photo-swipe/photo-swipe-pswp.js"></script>
+    <script src="directive/photo-swipe/photo-swipe-gallery.js"></script>
+    <script src="directive/photo-swipe/photo-swipe-item.js"></script>
+    <title>Document</title>
+</head>
+
+<body ng-app="application">
+    <photo-swipe>
+        <h2>First gallery:</h2>
+
+        <photo-swipe-gallery pswp-id="1">
+            <photo-swipe-item
+                image-origin-href="https://farm3.staticflickr.com/2567/5697107145_a4c2eaa0cd_o.jpg"
+                image-origin-size="1024x1024"
+                image-thumbnail-src="https://farm3.staticflickr.com/2567/5697107145_3c27ff3cd1_m.jpg"
+                image-alt="Image Alt"
+                image-desc="Image caption 1"></photo-swipe-item>
+            <photo-swipe-item
+                image-origin-href="https://farm3.staticflickr.com/1043/5186867718_06b2e9e551_b.jpg"
+                image-origin-size="1024x1024"
+                image-thumbnail-src="https://farm3.staticflickr.com/1043/5186867718_06b2e9e551_m.jpg"
+                image-alt="Image Alt"
+                image-desc="Image caption 1"></photo-swipe-item>
+        </photo-swipe-gallery>
+    </photo-swipe>
+
+    <photo-swipe>
+        <h2>Second gallery:</h2>
+
+        <photo-swipe-gallery pswp-id="2">
+            <photo-swipe-item
+                image-origin-href="https://farm3.staticflickr.com/5023/5578283926_822e5e5791_b.jpg"
+                image-origin-size="1024x1024"
+                image-thumbnail-src="https://farm3.staticflickr.com/5023/5578283926_822e5e5791_m.jpg"
+                image-alt="Image Alt"
+                image-desc="Image caption 1"></photo-swipe-item>
+            <photo-swipe-item
+                image-origin-href="https://farm3.staticflickr.com/6175ep/6176698785_7dee72237e_b.jpg"
+                image-origin-size="1024x1024"
+                image-thumbnail-src="https://farm3.staticflickr.com/6175/6176698785_7dee72237e_m.jpg"
+                image-alt="Image Alt"
+                image-desc="Image caption 1"></photo-swipe-item>
+        </photo-swipe-gallery>
+    </photo-swipe>
+
+    <photo-swipe-pswp/>
+</body>
+
+</html>

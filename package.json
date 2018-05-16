@@ -1,0 +1,27 @@
+{
+  "name": "photo-exh",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "\"npm run lite\"",
+    "compass": "compass watch",
+    "lite": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlyMaple/Photo-Exhibitions-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FlyMaple/Photo-Exhibitions-/issues"
+  },
+  "homepage": "https://github.com/FlyMaple/Photo-Exhibitions-#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0",
+    "photoswipe": "^4.1.2"
+  }
+}
